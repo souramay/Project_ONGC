@@ -15,6 +15,20 @@ This is a standalone offline desktop application for analyzing ONGC gas producti
 
 ## Installation & Setup
 
+### 🚀 Easy Setup for Anyone (No Technical Knowledge Required)
+
+**Option 1: Automated Setup (Recommended)**
+1. Download the entire project from GitHub
+2. Double-click `setup.bat` - This creates everything you need automatically!
+3. Wait for installation to complete (2-3 minutes)
+4. Double-click `run_app.bat` to start the application
+
+**Why no .venv folder included?**
+- The virtual environment (.venv) contains 25,000+ files (300+ MB)
+- It's platform-specific (Windows/Mac/Linux differences) 
+- GitHub has file size limits
+- The `setup.bat` creates it automatically in 2 minutes!
+
 ### Quick Start
 1. Double-click `run_app.bat` to automatically install dependencies and start the app
 2. The application will create a `data_folder` if it doesn't exist
