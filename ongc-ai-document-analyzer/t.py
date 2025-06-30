@@ -1,4 +1,7 @@
 import os
+# Set Hugging Face model cache to local project folder
+os.environ['TRANSFORMERS_CACHE'] = os.path.join(os.path.dirname(__file__), 'model_cache')
+
 import tkinter as tk
 from tkinter import ttk, messagebox
 from docx import Document
@@ -32,16 +35,69 @@ warnings.filterwarnings("ignore")
 
 # Initialize summarization model (runs locally)
 print("Loading summarization model...")
+
+def check_model_exists(model_name, cache_dir):
+    """Check if model files exist in cache directory"""
+    model_cache_path = os.path.join(cache_dir, f"models--{model_name.replace('/', '--')}")
+    
+    if not os.path.exists(model_cache_path):
+        return False, f"Model directory not found: {model_cache_path}"
+    
+    # Check for essential files
+    snapshots_dir = os.path.join(model_cache_path, "snapshots")
+    if not os.path.exists(snapshots_dir):
+        return False, "Snapshots directory not found"
+    
+    # Get the latest snapshot
+    try:
+        snapshot_dirs = [d for d in os.listdir(snapshots_dir) if os.path.isdir(os.path.join(snapshots_dir, d))]
+        if not snapshot_dirs:
+            return False, "No snapshot directories found"
+        
+        latest_snapshot = os.path.join(snapshots_dir, snapshot_dirs[0])
+        essential_files = ["config.json", "tokenizer.json", "vocab.json"]
+        
+        missing_files = []
+        for file in essential_files:
+            if not os.path.exists(os.path.join(latest_snapshot, file)):
+                missing_files.append(file)
+        
+        if missing_files:
+            return False, f"Missing essential files: {missing_files}"
+        
+        return True, f"Model found in: {latest_snapshot}"
+        
+    except Exception as e:
+        return False, f"Error checking snapshots: {e}"
+
 try:
     # Using a lightweight BART model for summarization
     model_name = "facebook/bart-large-cnn"
+    cache_dir = os.path.join(os.path.dirname(__file__), 'model_cache')
+    
+    # Check if model exists locally
+    model_exists, status_msg = check_model_exists(model_name, cache_dir)
+    
+    if model_exists:
+        print(f"✅ Model verification: {status_msg}")
+        print("Loading model from local cache...")
+    else:
+        print(f"⚠️  Model verification: {status_msg}")
+        print("Model will be downloaded from Hugging Face if internet is available...")
+    
     tokenizer = AutoTokenizer.from_pretrained(model_name)
     model = AutoModelForSeq2SeqLM.from_pretrained(model_name)
     summarizer = pipeline("summarization", model=model, tokenizer=tokenizer, 
                          max_length=300, min_length=50, do_sample=False)
-    print("Summarization model loaded successfully!")
+    
+    if model_exists:
+        print("✅ Summarization model loaded successfully from local cache!")
+    else:
+        print("✅ Summarization model downloaded and loaded successfully!")
+        
 except Exception as e:
-    print(f"Error loading summarization model: {e}")
+    print(f"❌ Error loading summarization model: {e}")
+    print("The application will continue without AI summarization features.")
     summarizer = None
 
 # Folder where all the Word docs are stored
@@ -61,7 +117,7 @@ heading_frame.pack_propagate(False)
 
 
 # Load and resize logo
-logo_path = r"C:\Users\bhowm\OneDrive\Desktop\New folder\ongc_logo.png"
+logo_path = "ongc_logo.png"
 logo_image = Image.open(logo_path)
 logo_image = logo_image.resize((60, 60), Image.LANCZOS)
 logo_photo = ImageTk.PhotoImage(logo_image)
