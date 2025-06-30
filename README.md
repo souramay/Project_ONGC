@@ -19,9 +19,9 @@ Welcome to my collection of data analysis and software development projects. Thi
 
 ---
 
-### 🤖 ONGC AI Document Analyzer
-- **Location**: `ongc-ai-document-analyzer/`
-- **Description**: Advanced AI-powered document analysis tool for ONGC gas production documents with offline capabilities
+### 🤖 Project2: ONGC AI Document Analyzer
+- **Location**: `project2/`
+- **Description**: Advanced AI-powered document analysis tool for ONGC gas production documents with offline capabilities (Updated version of Project2)
 - **Tech Stack**: Python, Tkinter, Transformers, BART-Large-CNN, PIL
 - **Status**: ✅ Active Development
 - **Features**: 
@@ -32,7 +32,7 @@ Welcome to my collection of data analysis and software development projects. Thi
   - Dark/Light theme support
   - Complete offline operation
 
-[**📖 View Project Documentation →**](ongc-ai-document-analyzer/README.md)
+[**📖 View Project Documentation →**](project2/README.md)
 
 ---
 
@@ -67,7 +67,7 @@ repository-root/
 │   ├── setup.py
 │   ├── README.md
 │   └── ...
-├── ongc-ai-document-analyzer/     # AI Document Analysis Tool
+├── project2/                        # Project2: AI Document Analysis Tool (Updated)
 │   ├── t.py                      # Main application
 │   ├── requirements.txt
 │   ├── setup.bat
@@ -99,8 +99,8 @@ python main_file.py
 ### For AI Document Analyzer:
 
 ```powershell
-# Switch to AI project
-cd ongc-ai-document-analyzer
+# Switch to AI project (Project2 updated)
+cd project2
 
 # Run automated setup (creates virtual environment and installs AI models)
 .\setup.bat
@@ -118,9 +118,9 @@ You can commit changes to individual projects or multiple projects:
 git add ongc-production-dashboard/
 git commit -m "Production Dashboard: Add new visualization features"
 
-# Commit changes to AI project
-git add ongc-ai-document-analyzer/
-git commit -m "AI Analyzer: Improve summarization accuracy"
+# Commit changes to Project2 (AI project)
+git add project2/
+git commit -m "Project2 AI Analyzer: Improve summarization accuracy"
 
 # Push changes
 git push
@@ -194,7 +194,7 @@ To add a new project to this repository:
 - **Multi-Format Support**: CSV data processing with comprehensive reporting
 - **Production Analytics**: Oil, gas, water, and condensate volume tracking
 
-### ONGC AI Document Analyzer
+### Project2: ONGC AI Document Analyzer
 - **Offline AI**: Complete offline operation with BART-Large-CNN model
 - **Smart Analysis**: AI-powered document summarization and search
 - **Professional UI**: Clean interface with dark/light theme support
