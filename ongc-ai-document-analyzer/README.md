@@ -1,4 +1,7 @@
 # ONGC Monthly Gas Production Dashboard
+
+![ONGC Logo](ongc_logo.png)
+
 ### Offline Desktop Application
 
 ## Overview
@@ -15,7 +18,7 @@ This is a standalone offline desktop application for analyzing ONGC gas producti
 
 ## Installation & Setup
 
-### 🚀 Easy Setup for Anyone (No Technical Knowledge Required)
+**Easy Setup for Anyone (No Technical Knowledge Required)**
 
 **Option 1: Automated Setup (Recommended)**
 1. Download the entire project from GitHub
@@ -25,7 +28,7 @@ This is a standalone offline desktop application for analyzing ONGC gas producti
 
 **Why no .venv folder included?**
 - The virtual environment (.venv) contains 25,000+ files (300+ MB)
-- It's platform-specific (Windows/Mac/Linux differences) 
+- It's platform-specific (Windows/Mac/Linux differences)
 - GitHub has file size limits
 - The `setup.bat` creates it automatically in 2 minutes!
 
@@ -54,7 +57,7 @@ This is a standalone offline desktop application for analyzing ONGC gas producti
    │   ├── Well_B.docx
    │   └── ...
    ```
-3. Click "🔄 Refresh Data" to scan for documents
+3. Click "Refresh Data" to scan for documents
 
 ## Usage
 
@@ -67,15 +70,15 @@ This is a standalone offline desktop application for analyzing ONGC gas producti
 ### Search Functionality
 1. Load a document first
 2. Enter search terms in the "Smart Search" box
-3. Click "🔍 Search & Summarize" for AI-powered results
+3. Click "Search & Summarize" for AI-powered results
 4. Use "Clear" to reset search results
 
 ### Additional Features
-- **🔄 Refresh Data**: Scan for new documents in data_folder
+- **Refresh Data**: Scan for new documents in data_folder
 - **Clear/Reset**: Clear all displayed content
 - **Open in Word**: Open the current document in Microsoft Word
 - **Open Folder**: Open the document's folder in Windows Explorer
-- **ℹ️ App Info**: View application information
+- **App Info**: View application information
 - **Dark Mode**: Toggle between light and dark themes
 
 ## AI Features
@@ -111,6 +114,11 @@ This is a standalone offline desktop application for analyzing ONGC gas producti
 - **Fully Offline**: No data sent to external servers
 - **Local Processing**: All analysis performed on your machine
 - **Private Documents**: Your documents remain on your local system
+
+## Model Download Location
+- The BART-Large-CNN AI model is automatically downloaded and stored in the local `model_cache` folder inside this project directory.
+- This ensures all model files remain with the application for easy deployment and offline use.
+- If you delete the `model_cache` folder, the model will be re-downloaded the next time you use the AI features.
 
 ## Troubleshooting
 
