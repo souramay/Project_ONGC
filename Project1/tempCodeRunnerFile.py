@@ -1,1 +1,0 @@
-ongc_logo.png
