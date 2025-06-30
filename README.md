@@ -1,6 +1,7 @@
 # My Projects Repository
 
 Welcome to my collection of data analysis and software development projects. This repository contains multiple independent projects, each organized in its own ## Project Highlights
+![ONGC Logo](ongc.png)
 
 ### ONGC Production Dashboard
 - **Live Data Visualization**: Real-time charts and interactive graphs
