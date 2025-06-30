@@ -1,6 +1,6 @@
 # ONGC Monthly Gas Production Dashboard
 
-![ONGC Logo](ongc_logo.png)
+![ONGC Logo](ongc.png)
 
 ### Offline Desktop Application
 
