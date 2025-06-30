@@ -1,29 +1,47 @@
 # My Projects Repository
 
-Welcome to my collection of data analysis and software development projects. This repository contains multiple independent projects, each organized in its own folder with complete documentation and setup instructions.
+Welcome to my collection of data analysis and software development projects. This repository contains multiple independent projects, each organized in its own ## Project Highlights
 
-## 📁 Projects Overview
+### ONGC Production Dashboard
+- **Live Data Visualization**: Real-time charts and interactive graphs
+- **Multi-Format Support**: CSV data processing with comprehensive reporting
+- **Production Analytics**: Oil, gas, water, and condensate volume tracking
 
-### 🛢️ ONGC Production Dashboard
+### Project2: ONGC AI Document Analyzer
+- **Offline AI**: Complete offline operation with BART-Large-CNN model
+- **Smart Analysis**: AI-powered document summarization and search
+- **Professional UI**: Clean interface with dark/light theme support
+- **Large Model Management**: Efficient handling of 300+ MB AI models
+
+---
+
+**Star this repository** if you find these projects useful!
+
+**Total Projects**: 2 (Growing!)  
+**Last Updated**: June 2025e documentation and setup instructions.
+
+## Projects Overview
+
+### ONGC Production Dashboard
 - **Location**: `ongc-production-dashboard/`
 - **Description**: A comprehensive desktop application for analyzing and visualizing ONGC (Oil and Natural Gas Corporation) monthly production data
 - **Tech Stack**: Python, Tkinter, Matplotlib, Pandas, PIL
-- **Status**: ✅ Active Development
+- **Status**: Active Development
 - **Features**: 
   - Interactive GUI for data analysis
   - Real-time production visualization
   - CSV data processing and reporting
   - Multi-product analysis (oil, gas, water, condensate)
 
-[**📖 View Project Documentation →**](ongc-production-dashboard/README.md)
+[**View Project Documentation →**](ongc-production-dashboard/README.md)
 
 ---
 
-### 🤖 Project2: ONGC AI Document Analyzer
-- **Location**: `project2/`
+### Project2: ONGC AI Document Analyzer
+- **Location**: `ongc-ai-document-analyzer/`
 - **Description**: Advanced AI-powered document analysis tool for ONGC gas production documents with offline capabilities (Updated version of Project2)
 - **Tech Stack**: Python, Tkinter, Transformers, BART-Large-CNN, PIL
-- **Status**: ✅ Active Development
+- **Status**: Active Development
 - **Features**: 
   - Offline AI summarization using BART-Large-CNN
   - Smart document search functionality
@@ -32,17 +50,17 @@ Welcome to my collection of data analysis and software development projects. Thi
   - Dark/Light theme support
   - Complete offline operation
 
-[**📖 View Project Documentation →**](project2/README.md)
+[**View Project Documentation →**](ongc-ai-document-analyzer/README.md)
 
 ---
 
-## 🛠️ Getting Started
+## Getting Started
 
 Each project is self-contained with its own:
-- ✅ Complete documentation
-- ✅ Dependency management
-- ✅ Setup scripts
-- ✅ Independent configuration
+- Complete documentation
+- Dependency management
+- Setup scripts
+- Independent configuration
 
 ### Quick Setup for Any Project
 
@@ -57,7 +75,7 @@ Each project is self-contained with its own:
    cat README.md  # or open README.md in your editor
    ```
 
-## 📋 Repository Structure
+## Repository Structure
 
 ```
 repository-root/
@@ -79,7 +97,7 @@ repository-root/
 └── README.md                     # This file
 ```
 
-## 🔧 Development Workflow
+## Development Workflow
 
 ### Working on Individual Projects
 
@@ -100,7 +118,7 @@ python main_file.py
 
 ```powershell
 # Switch to AI project (Project2 updated)
-cd project2
+cd ongc-ai-document-analyzer
 
 # Run automated setup (creates virtual environment and installs AI models)
 .\setup.bat
@@ -119,14 +137,14 @@ git add ongc-production-dashboard/
 git commit -m "Production Dashboard: Add new visualization features"
 
 # Commit changes to Project2 (AI project)
-git add project2/
+git add ongc-ai-document-analyzer/
 git commit -m "Project2 AI Analyzer: Improve summarization accuracy"
 
 # Push changes
 git push
 ```
 
-## 🛡️ Project Independence
+## Project Independence
 
 Each project maintains:
 - **Separate Dependencies**: Own `requirements.txt` and virtual environments
@@ -134,12 +152,10 @@ Each project maintains:
 - **Self-Contained Documentation**: Complete setup and usage instructions
 - **Individual Versioning**: Can be tagged and released separately
 
-## 📊 Technologies Used Across Projects
+## Technologies Used Across Projects
 
 ### Programming Languages
-- ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
-- ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
-- ![Other languages as needed]
+- Python
 
 ### Frameworks & Libraries
 - **Data Analysis**: Pandas, NumPy, Matplotlib, Seaborn
@@ -154,7 +170,7 @@ Each project maintains:
 - **Package Management**: pip
 - **AI Models**: Offline BART-Large-CNN for summarization
 
-## 🤝 Contributing
+## Contributing
 
 ### For Individual Projects
 1. Navigate to the specific project folder
@@ -167,7 +183,7 @@ Each project maintains:
 3. Make your changes
 4. Submit a pull request
 
-## 📝 Adding New Projects
+## Adding New Projects
 
 To add a new project to this repository:
 
