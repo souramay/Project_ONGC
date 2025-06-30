@@ -124,6 +124,7 @@ model_cache/
 
 # Data folders (contains user documents, should not be in version control)
 data_folder/
+data_folder/**
 
 # Batch files output
 *.bat.log
