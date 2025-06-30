@@ -2,6 +2,8 @@
 echo ======================================
 echo ONGC Project - Git Update Script
 echo ======================================
+echo Note: Use this script from the ongc-ai-document-analyzer directory
+echo ======================================
 echo.
 
 echo Adding all files to git...
