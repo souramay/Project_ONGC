@@ -1,0 +1,130 @@
+# ONGC AI Document Analyzer - Project Specific Ignores
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+
+# Virtual Environment
+.venv/
+venv/
+env/
+.env
+ENV/
+
+# AI Models and Cache
+model_cache/
+models/
+*.bin
+*.safetensors
+*.json
+config.json
+tokenizer.json
+pytorch_model.bin
+tf_model.h5
+
+# Hugging Face Transformers cache
+transformers_cache/
+.cache/
+huggingface/
+
+# Large model files
+*.pt
+*.pth
+*.ckpt
+*.pb
+*.onnx
+*.tflite
+
+# TensorFlow
+*.tfevents.*
+checkpoint
+model.ckpt.*
+saved_model/
+
+# PyTorch
+*.pth
+*.pt
+lightning_logs/
+
+# Data files (if large)
+data_folder/
+datasets/
+*.csv
+*.xlsx
+*.docx
+*.pdf
+
+# Logs
+*.log
+logs/
+wandb/
+
+# Temporary files
+*.tmp
+*.temp
+temp/
+tmp/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# Output files
+output/
+results/
+exports/
+reports/
+
+# Configuration files with secrets
+config.ini
+settings.ini
+secrets.env
+
+# Backup files
+*.bak
+*.backup
+
+# Windows shortcuts
+*.lnk
+
+# Virtual Machine files (if any)
+*.vmdk
+*.vdi
+*.vhd
+*.vmx
+*.ovf
+*.ova
+*.qcow2
+
+# Docker
+.dockerignore
+Dockerfile
+docker-compose.yml
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# pytest
+.pytest_cache/
+.coverage
+htmlcov/
+
+# mypy
+.mypy_cache/

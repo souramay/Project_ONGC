@@ -19,19 +19,22 @@ Welcome to my collection of data analysis and software development projects. Thi
 
 ---
 
-### 🚀 [Your Next Project Name]
-- **Location**: `project-folder-name/`
-- **Description**: Brief description of your next project
-- **Tech Stack**: Technologies used
-- **Status**: 🔄 In Development / ✅ Complete / 📋 Planned
+### 🤖 ONGC AI Document Analyzer
+- **Location**: `ongc-ai-document-analyzer/`
+- **Description**: Advanced AI-powered document analysis tool for ONGC gas production documents with offline capabilities
+- **Tech Stack**: Python, Tkinter, Transformers, BART-Large-CNN, PIL
+- **Status**: ✅ Active Development
+- **Features**: 
+  - Offline AI summarization using BART-Large-CNN
+  - Smart document search functionality
+  - Professional table formatting
+  - Perforation analysis capabilities
+  - Dark/Light theme support
+  - Complete offline operation
+
+[**📖 View Project Documentation →**](ongc-ai-document-analyzer/README.md)
 
 ---
-
-### 📊 [Another Project Name]
-- **Location**: `another-project/`
-- **Description**: Brief description
-- **Tech Stack**: Technologies used
-- **Status**: Status indicator
 
 ## 🛠️ Getting Started
 
@@ -58,18 +61,19 @@ Each project is self-contained with its own:
 
 ```
 repository-root/
-├── ongc-production-dashboard/     # ONGC Production Analysis Tool
+├── ongc-production-dashboard/     # Monthly Production Analysis Tool
 │   ├── Monthly_Production.py
 │   ├── requirements.txt
 │   ├── setup.py
 │   ├── README.md
 │   └── ...
-├── project-2/                    # Your second project
-│   ├── main files...
+├── ongc-ai-document-analyzer/     # AI Document Analysis Tool
+│   ├── t.py                      # Main application
 │   ├── requirements.txt
+│   ├── setup.bat
+│   ├── run_app.bat
 │   ├── README.md
-│   └── ...
-├── project-3/                    # Your third project
+│   ├── .gitignore               # AI/ML specific ignores
 │   └── ...
 ├── .gitignore                    # Global repository ignores
 └── README.md                     # This file
@@ -92,6 +96,19 @@ pip install -r requirements.txt
 python main_file.py
 ```
 
+### For AI Document Analyzer:
+
+```powershell
+# Switch to AI project
+cd ongc-ai-document-analyzer
+
+# Run automated setup (creates virtual environment and installs AI models)
+.\setup.bat
+
+# Run the application
+.\run_app.bat
+```
+
 ### Committing Changes
 
 You can commit changes to individual projects or multiple projects:
@@ -99,11 +116,11 @@ You can commit changes to individual projects or multiple projects:
 ```powershell
 # Commit changes to a specific project
 git add ongc-production-dashboard/
-git commit -m "ONGC Dashboard: Add new visualization features"
+git commit -m "Production Dashboard: Add new visualization features"
 
-# Commit changes to multiple projects
-git add .
-git commit -m "Update multiple projects: bug fixes and improvements"
+# Commit changes to AI project
+git add ongc-ai-document-analyzer/
+git commit -m "AI Analyzer: Improve summarization accuracy"
 
 # Push changes
 git push
@@ -126,15 +143,16 @@ Each project maintains:
 
 ### Frameworks & Libraries
 - **Data Analysis**: Pandas, NumPy, Matplotlib, Seaborn
-- **GUI Development**: Tkinter, PyQt
-- **Web Development**: Flask, Django, React (as applicable)
-- **Database**: SQLite, PostgreSQL (as applicable)
+- **GUI Development**: Tkinter
+- **AI/ML**: Transformers, BART-Large-CNN, Hugging Face
+- **Document Processing**: python-docx, ReportLab
+- **Image Processing**: PIL (Pillow)
 
 ### Tools & Platforms
 - **Version Control**: Git, GitHub
 - **Development**: VS Code, PyCharm
-- **Package Management**: pip, npm
-- **Containerization**: Docker (where applicable)
+- **Package Management**: pip
+- **AI Models**: Offline BART-Large-CNN for summarization
 
 ## 🤝 Contributing
 
@@ -169,21 +187,22 @@ To add a new project to this repository:
    - Add your project to the "Projects Overview" section
    - Update the repository structure diagram
 
-## 📞 Contact & Support
+## � Project Highlights
 
-- **Developer**: [Your Name]
-- **Email**: [Your Email]
-- **LinkedIn**: [Your LinkedIn Profile]
-- **Issues**: Use GitHub Issues for project-specific problems
+### ONGC Production Dashboard
+- **Live Data Visualization**: Real-time charts and interactive graphs
+- **Multi-Format Support**: CSV data processing with comprehensive reporting
+- **Production Analytics**: Oil, gas, water, and condensate volume tracking
 
-## 📄 License
-
-Each project may have its own licensing terms. Please refer to individual project folders for specific license information.
+### ONGC AI Document Analyzer
+- **Offline AI**: Complete offline operation with BART-Large-CNN model
+- **Smart Analysis**: AI-powered document summarization and search
+- **Professional UI**: Clean interface with dark/light theme support
+- **Large Model Management**: Efficient handling of 300+ MB AI models
 
 ---
 
 ⭐ **Star this repository** if you find these projects useful!
 
-📈 **Total Projects**: 1 (Growing!)  
-🔄 **Last Updated**: June 2025  
-👨‍💻 **Maintained by**: [Your Name]
+📈 **Total Projects**: 2 (Growing!)  
+🔄 **Last Updated**: June 2025
